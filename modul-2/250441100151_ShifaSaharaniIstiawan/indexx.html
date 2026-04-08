@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHEEF'S SIGNATURE</title>
+    <style>
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* style dasar halaman */
+      body {
+        margin: 0;
+        font-family: 'poppins', sans-serif;
+        background: #fff3e6;
+      }
+      /* NAVBAR */
+      /* kotak navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        background: white;
+        position: sticky; 
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* bayangan tipis */
+      }
+      /* bagian logo */
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+      }
+      /* ukuran gambar logo */
+      .logo img {
+        width: 40px;
+        border-radius: 10px;
+      }
+      /* link menu */
+      .menu a {
+        text-decoration: none;
+        margin-left: 15px;
+        color: black;
+      }
+      /* tombol order now */
+      .order-btn {
+        background: #d35400;
+        color: white;
+        padding: 7px 15px;
+        border-radius: 20px;
+      }
+      /* HERO  */
+      #hero {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      /* gambar hero */
+      #hero img {
+        width: 230px;
+        border-radius: 15px;
+      }
+      /* tombol lihat menu */
+      .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background: #d35400;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      /* MENU */
+      /* section menu */
+      #menu {
+        padding: 40px;
+        background: white;
+        text-align: center;
+      }
+      /* kotak menu */
+      .menu-item {
+        display: inline-block;
+        width: 180px;
+        margin: 10px;
+        padding: 15px;
+        background: #fff3e6;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* bayangan */
+      }
+      /* gambar menu */
+      .menu-item img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      /* our story */
+
+      #story {
+        padding: 40px;
+      }
+      /* footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #d35400;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="thaitealogo.jpeg" />
+        SHEEF'S SIGNATURE
+      </div>
+      <div class="menu">
+        <a href="#hero">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu" class="order-btn">Order Now</a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div id="hero">
+      <div>
+        <h1>Authentic Thai Tea Experience.</h1>
+        <p>Dibuat dari daun teh pilihan langsung dari    pegunungan Thailand.</p>
+        <a href="#menu" class="btn">Lihat Menu</a>
+      </div>
+      <img src="thaiteapicture.jpeg" />
+    </div>
+
+    <!-- MENU -->
+    <div id="menu">
+      <h2>Menu</h2>
+      <div class="menu-item">
+        <img src="orithaitea.jpeg" />
+        <h4>Original Thai Tea</h4>
+        <p>Rp12.000</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="greenthaitea.jpeg" />
+        <h4>Green Thai Tea</h4>
+        <p>Rp14.000</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="milkthaitea.jpeg" />
+        <h4>Milk Thai Tea</h4>
+        <p>Rp15.000</p>
+      </div>
+    </div>
+
+    <!-- STORY -->
+    <div id="story">
+      <h2>Our Story</h2>
+      <p>
+        Sheef's signature menyediakan Thai Tea berkualitas dari bahan terbaik agar rasanya
+        enak, segar, dan disukai banyak orang.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>Copyright © 2026 SHEEF'S SIGNATURE</footer>
+  </body>
+</html>
