@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Shifa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FADADD] text-gray-800 font-sans scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-[#F3C6C9]/80 backdrop-blur fixed w-full top-0 z-50">
+    <h1 class="text-2xl font-bold text-[#E5989B]">Shifa's PortoFolio</h1>
+    <ul class="flex gap-6 text-sm md:text-base">
+      <li><a href="#home" class="hover:text-[#E5989B]">Home</a></li>
+      <li><a href="#about" class="hover:text-[#E5989B]">About</a></li>
+      <li><a href="#skills" class="hover:text-[#E5989B]">Skills</a></li>
+      <li><a href="#contact" class="hover:text-[#E5989B]">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="h-screen flex items-center justify-center px-6">
+    <div class="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
+      
+      <!-- Text -->
+      <div class="text-center md:text-left">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Halo, Saya <br><span class="text-[#E5989B]">Shifa Saharani Istiawan</span></h2>
+        <p class="text-gray-600 mb-6">Mahasiswa Prodi Sistem Informasi </p>
+        <a href="#contact" class="bg-[#E5989B] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#D88C90]">Contact me</a>
+      </div>
+
+      <!-- Foto -->
+      <div>
+        <img src="profilpict.jpeg" alt="foto" class="w-64 h-64 object-cover rounded-full border-4 border-[#E5989B] shadow-lg">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-[#F3C6C9]">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-3xl font-bold mb-4 text-[#E5989B]">Tentang Saya</h3>
+        <p class="text-gray-700">Saya adalah mahasiswa baru Sistem Informasi yang mempelajari pengembangan web dan dan ingin mengasah skill desain grafis saya. Saya suka membuat tampilan website yang modern, responsif, dan user-friendly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 px-6">
+    <h3 class="text-3xl font-bold text-center text-[#E5989B] mb-10">Skills</h3>
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <div>
+        <p class="text-gray-700">Adobe Photoshop</p>
+        <div class="w-full bg-[#F3C6C9] rounded-full h-3">
+          <div class="bg-[#E5989B] h-3 rounded-full w-[80%]"></div>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-gray-700">CorelDRAW</p>
+        <div class="w-full bg-[#F3C6C9] rounded-full h-3">
+          <div class="bg-[#E5989B] h-3 rounded-full w-[65%]"></div>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-gray-700">HTML/CSS</p>
+        <div class="w-full bg-[#F3C6C9] rounded-full h-3">
+          <div class="bg-[#E5989B] h-3 rounded-full w-[40%]"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-[#F3C6C9]">
+    <h3 class="text-3xl font-bold text-center text-[#E5989B] mb-10">Kontak</h3>
+    <!-- CONTACT -->
+    <section id="contact" class="bg-white py-16">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+        <div class="flex justify-center gap-6 mb-8">
+          <a href="https://wa.me/6285904262215?text=P%20P%20apahh?" target="_blank">
+            <img src="wa.png" class="w-8 hover:scale-110 transition" />
+          </a>
+
+          <a
+            href="https://www.instagram.com/ssaharanist?igsh=ZTAzdHphdTJoMmhu"
+            target="_blank"
+          >
+            <img src="ig.png" class="w-8 hover:scale-110 transition" />
+          </a>
+        </div>
+    <div class="max-w-xl mx-auto">
+      <form class="flex flex-col gap-4">
+        <input type="text" placeholder="Nama" class="p-3 rounded bg-white text-gray-800 border border-[#F3C6C9]">
+        <input type="email" placeholder="Email" class="p-3 rounded bg-white text-gray-800 border border-[#F3C6C9]">
+        <textarea placeholder="Pesan" class="p-3 rounded bg-white text-gray-800 border border-[#F3C6C9]"></textarea>
+        <button class="bg-[#E5989B] text-white py-3 rounded font-semibold hover:bg-[#D88C90]">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 bg-[#EABFC4] text-gray-700">
+    © 2026 Shifa Saharani Istiawan
+  </footer>
+
+</body>
+</html>

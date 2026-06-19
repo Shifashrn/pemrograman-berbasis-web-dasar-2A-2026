@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Bangkalan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FDF6EC] font-sans scroll-smooth">
+
+<!-- Navbar -->
+<nav class="flex justify-between items-center px-8 py-4 bg-[#5C3D2E] text-white fixed w-full top-0 shadow z-50">
+  <h1 class="font-bold">Kabupaten Bangkalan</h1>
+  <ul class="flex gap-5 text-sm">
+    <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+    <li><a href="#profil" class="hover:text-yellow-300">Profil</a></li>
+    <li><a href="#data" class="hover:text-yellow-300">Data</a></li>
+    <li><a href="#wisata" class="hover:text-yellow-300">Wisata</a></li>
+    <li><a href="#kuliner" class="hover:text-yellow-300">Kuliner</a></li>
+  </ul>
+</nav>
+
+<div class="h-16"></div>
+
+<!-- HERO (FIXED) -->
+<section id="home">
+  <div class="relative">
+    
+    <img src="profil1bangkalan.jpeg" 
+         class="w-full h-[400px] md:h-[500px] object-cover object-top"/>
+
+    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+      <div class="text-center text-white px-4">
+        
+        <h1 class="text-4xl font-bold mb-4">
+          Selamat Datang di Kabupaten Bangkalan
+        </h1>
+
+        <p class="mb-4">
+          Pulau Madura • Jawa Timur
+        </p>
+
+        <a href="#profil" 
+           class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded transition">
+          Lihat Profil
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Profil -->
+<section id="profil" class="px-10 py-12 bg-white text-center">
+
+  <h2 class="text-xl font-bold text-[#5C3D2E] mb-4">Profil Bangkalan</h2>
+
+  <div class="overflow-hidden rounded shadow inline-block">
+    <img src="profil2bangkalan.jpg"
+         class="mx-auto w-72 md:w-96 object-cover transition duration-500">
+  </div>
+
+  <div class="max-w-2xl mx-auto text-sm text-gray-600 mt-4">
+    <p class="mb-3">
+     Bangkalan adalah sebuah kabupaten di ujung paling barat Pulau Madura, Provinsi Jawa Timur, yang dikenal sebagai gerbang utama masuk ke Madura.
+    </p>
+
+    <p>
+      Daerah ini dikenal dengan potensi wisata alam, budaya, serta kuliner khas yang menjadi daya tarik wisatawan.
+    </p>
+  </div>
+
+</section>
+
+<!-- Data -->
+<section id="data" class="px-10 py-12">
+  <h2 class="text-xl font-bold text-center text-[#5C3D2E] mb-6">Data Singkat</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    
+    <div class="bg-white p-6 rounded shadow">
+      <h3 class="text-2xl font-bold text-yellow-600">1 Juta+</h3>
+      <p class="text-sm text-gray-500">Penduduk</p>
+    </div>
+
+    <div class="bg-white p-6 rounded shadow">
+      <h3 class="text-2xl font-bold text-yellow-600">18</h3>
+      <p class="text-sm text-gray-500">Kecamatan</p>
+    </div>
+
+    <div class="bg-white p-6 rounded shadow">
+      <h3 class="text-2xl font-bold text-yellow-600">281</h3>
+      <p class="text-sm text-gray-500">Desa/Kelurahan</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Wisata -->
+<section id="wisata" class="px-10 py-12 bg-[#FFF8E7]">
+  <h2 class="text-xl font-bold text-center text-[#5C3D2E] mb-6">Tempat Wisata</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    
+    <div class="border p-4 rounded hover:shadow-md transition">
+      <div class="overflow-hidden rounded mb-3">
+        <img src="bukitjaddih.jpeg" 
+             class="w-full h-48 object-cover mx-auto transition duration-500 hover:scale-110">
+      </div>
+      <h3 class="font-bold">Bukit Jaddih</h3>
+      <p class="text-sm text-gray-500">Bukit kapur yang unik dan instagramable.</p>
+    </div>
+
+    <div class="border p-4 rounded hover:shadow-md transition">
+      <div class="overflow-hidden rounded mb-3">
+        <img src="mercusuar.jpg" 
+             class="w-full h-48 object-cover mx-auto transition duration-500 hover:scale-110">
+      </div>
+      <h3 class="font-bold">Mercusuar Sembilangan</h3>
+      <p class="text-sm text-gray-500">Mercusuar bersejarah dengan pemandangan laut.</p>
+    </div>
+
+    <div class="border p-4 rounded hover:shadow-md transition">
+      <div class="overflow-hidden rounded mb-3">
+        <img src="suramadu.jpeg" 
+             class="w-full h-48 object-cover mx-auto transition duration-500 hover:scale-110">
+      </div>
+      <h3 class="font-bold">Jembatan Suramadu</h3>
+      <p class="text-sm text-gray-500">Ikon penghubung Surabaya dan Madura.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Kuliner -->
+<section id="kuliner" class="px-10 py-12">
+  <h2 class="text-xl font-bold text-center text-[#5C3D2E] mb-6">Kuliner Khas</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    
+    <div class="bg-[#FFF3D6] p-5 rounded hover:shadow-md transition">
+      <div class="overflow-hidden rounded mb-3">
+        <img src="bebeksinjay.jpg" 
+             class="w-full h-48 object-cover transition duration-500 hover:scale-110">
+      </div>
+      <h3 class="font-bold">Bebek Sinjay</h3>
+      <p class="text-sm text-gray-600">Bebek goreng dengan sambal pencit khas.</p>
+    </div>
+
+    <div class="bg-[#FFF3D6] p-5 rounded hover:shadow-md transition">
+      <div class="overflow-hidden rounded mb-3">
+        <img src="satemadura.jpeg" 
+             class="w-full h-48 object-cover transition duration-500 hover:scale-110">
+      </div>
+      <h3 class="font-bold">Sate Madura</h3>
+      <p class="text-sm text-gray-600">Sate dengan bumbu kacang khas.</p>
+    </div>
+
+    <div class="bg-[#FFF3D6] p-5 rounded hover:shadow-md transition">
+      <div class="overflow-hidden rounded mb-3">
+        <img src="nasiserpang.jpeg" 
+             class="w-full h-48 object-cover transition duration-500 hover:scale-110">
+      </div>
+      <h3 class="font-bold">Nasi Serpang</h3>
+      <p class="text-sm text-gray-600">Nasi dengan lauk khas Madura.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#5C3D2E] text-white text-center py-4 text-sm">
+  <p>© 2026 Profil Kabupaten Bangkalan</p>
+</footer>
+
+</body>
+</html>
