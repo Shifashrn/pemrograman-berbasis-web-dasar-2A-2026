@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-8 rounded-lg shadow-md w-80">
+    <h2 class="text-2xl font-bold text-center mb-5">Login</h2>
+
+    <form id="loginForm">
+      <div class="mb-3">
+        <input type="text" id="email" placeholder="Email"
+          class="w-full border p-2 rounded">
+        <small id="emailError" class="text-red-500 text-xs"></small>
+      </div>
+
+      <div class="mb-3">
+        <input type="password" id="password" placeholder="Password"
+          class="w-full border p-2 rounded">
+        <small id="passwordError" class="text-red-500 text-xs"></small>
+      </div>
+
+      <button class="w-full bg-orange-400 text-white py-2 rounded">
+        Login
+      </button>
+    </form>
+  </div>
+
+  <!-- VALIDASI JS -->
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value.trim();
+
+      let emailError = document.getElementById("emailError");
+      let passwordError = document.getElementById("passwordError");
+
+      emailError.textContent = "";
+      passwordError.textContent = "";
+
+      let valid = true;
+
+      if(email === ""){
+        emailError.textContent = "Email wajib diisi!";
+        valid = false;
+      } else if(!email.includes("@")){
+        emailError.textContent = "Email tidak valid!";
+        valid = false;
+      }
+
+      if(password === ""){
+        passwordError.textContent = "Password wajib diisi!";
+        valid = false;
+      } else if(password.length < 6){
+        passwordError.textContent = "Minimal 6 karakter!";
+        valid = false;
+      }
+
+      if(valid){
+        alert("Login berhasil!");
+        window.location.href = "index.html"; // pindah ke halaman UTS
+      }
+    });
+  </script>
+
+</body>
+</html>
